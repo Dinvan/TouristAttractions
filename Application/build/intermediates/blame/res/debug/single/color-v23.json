@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/color-v23/abc_tint_default.xml"
+    }
+]

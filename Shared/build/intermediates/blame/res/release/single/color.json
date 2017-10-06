@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/color/common_google_signin_btn_text_dark.xml"
+    }
+]

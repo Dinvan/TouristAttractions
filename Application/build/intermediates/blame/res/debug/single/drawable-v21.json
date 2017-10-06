@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    }
+]

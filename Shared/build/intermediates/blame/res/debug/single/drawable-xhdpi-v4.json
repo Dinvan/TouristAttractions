@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/googleg_standard_color_18.png",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_full_open_on_phone.png",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/bubble_mask.9.png",
+        "source": "/home/advanz101/.android/build-cache/3559fe1aebf4dfae2cfbd5d9bba280a1870a56d1/output/res/drawable-xhdpi-v4/bubble_mask.9.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/googleg_disabled_color_18.png",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/res/merged/debug/drawable-xhdpi-v4/bubble_shadow.9.png",
+        "source": "/home/advanz101/.android/build-cache/3559fe1aebf4dfae2cfbd5d9bba280a1870a56d1/output/res/drawable-xhdpi-v4/bubble_shadow.9.png"
+    }
+]

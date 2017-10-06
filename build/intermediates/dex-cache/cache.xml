@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="435eaaf83c13c6b779073f34caebb579f61fd7c7">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_8a88fe966222c8814c9c05b16308bfab27f80c8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/advanz101/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/glide-3.6.1_1f235d77838a95ca638bd7e9b3c3ff4ed8cbca6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/advanz101/.android/build-cache/a27992ab3c9efee58822211d89cd672fc170312c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_73cbc0ad43653bd0c6544b4479dd1770223ff116.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/advanz101/.android/build-cache/19698ae17ecdf32673ce59a6f875299471f115b2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_a2edf3269683d5557de803af037d72552e2ad968.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/advanz101/.android/build-cache/3559fe1aebf4dfae2cfbd5d9bba280a1870a56d1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cf251baf39f5c5138224b67b4106eb6331abbd13">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_c4283cf3b4bb72279c4e225796cd927c57018158.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_a134f310cd5fd5b15e12e5c61ed2cb7472ed4ec4.jar" />
+    </item>
+
+</items>
