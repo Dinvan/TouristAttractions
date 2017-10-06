@@ -2,5 +2,9 @@
     {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/menu/main.xml",
         "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/menu/menu_scrolling.xml",
+        "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/menu/menu_scrolling.xml"
     }
 ]

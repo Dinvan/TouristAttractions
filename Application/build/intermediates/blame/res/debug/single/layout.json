@@ -144,6 +144,10 @@
         "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/content_scrolling.xml",
+        "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/content_scrolling.xml"
+    },
+    {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/fragment_detail.xml",
         "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/fragment_detail.xml"
     },
@@ -166,6 +170,10 @@
     {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/list_row.xml",
         "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/list_row.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/activity_scrolling.xml",
+        "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/activity_scrolling.xml"
     },
     {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",

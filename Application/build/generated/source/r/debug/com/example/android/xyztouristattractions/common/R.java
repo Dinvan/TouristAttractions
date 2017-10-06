@@ -100,7 +100,7 @@ public final class R {
         public static final int google_play_services_version = 0x7f0c0007;
     }
     public static final class layout {
-        public static final int text_bubble = 0x7f040040;
+        public static final int text_bubble = 0x7f040042;
     }
     public static final class string {
         public static final int common_google_play_services_enable_button = 0x7f080013;
@@ -120,7 +120,7 @@ public final class R {
         public static final int common_open_on_phone = 0x7f080021;
         public static final int common_signin_button_text = 0x7f080022;
         public static final int common_signin_button_text_long = 0x7f080023;
-        public static final int show_detail_capability_name = 0x7f080046;
+        public static final int show_detail_capability_name = 0x7f080048;
     }
     public static final class style {
         public static final int Bubble_TextAppearance_Dark = 0x7f0a00d8;

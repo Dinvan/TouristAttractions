@@ -36,4 +36,13 @@
         <item name="displayOptions">showHome|homeAsUp</item>
     </style>
 
+    <style name="XYZAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="XYZAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="XYZAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
 </resources>

@@ -1965,7 +1965,7 @@ attractions in a GridViewPager UI component.
 
         
         
-    </string><string name="app_name">XYZTouristAttractions</string></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/strings.xml" qualifiers=""><string name="nearby_attraction">Nearby tourist attraction</string><string name="action_test_microapp_dialog">
+    </string><string name="app_name">XYZTouristAttractions</string></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/strings.xml" qualifiers=""><string name="title_activity_scrolling">ScrollingActivity</string><string name="action_test_microapp_dialog">
 
 This will trigger a notification on Wear that lets you open up the full
 wearable app. A few things to note:\n\n
@@ -1977,7 +1977,7 @@ be triggered after the data was transferred)\n\n
 • The notification priority is set to the recommended default value so it may
 appear further down your stream
 
-    </string><string name="action_test_toggle_geofence">Toggle Geofence Trigger</string><string name="permission_explanation">Allow this app to use your location to show distance to attractions?</string><string name="action_test_microapp">Test Micro App</string><string name="empty_list">No attractions found nearby!</string><string name="action_test_notification">Test Notification</string><string name="action_map">Show on Map</string><string name="permission_explanation_action">Let\'s do it!</string><string name="action_test_notification_dialog">
+    </string><string name="action_test_toggle_geofence">Toggle Geofence Trigger</string><string name="action_settings">Settings</string><string name="permission_explanation">Allow this app to use your location to show distance to attractions?</string><string name="action_map">Show on Map</string><string name="permission_explanation_action">Let\'s do it!</string><string name="action_test_notification_dialog">
 
 This will trigger a rich notification that is bridged over to the Wear device.
 \n\nNote that the first time this runs it can take 20-30 seconds to transfer
@@ -1985,10 +1985,98 @@ the image data (in practice, users wouldn\'t notice this as the notification
 would be triggered automatically and only show up after the data was
 transferred).
 
+    </string><string name="nearby_attraction">Nearby tourist attraction</string><string name="action_test_microapp">Test Micro App</string><string name="empty_list">No attractions found nearby!</string><string name="action_test_notification">Test Notification</string><string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
     </string></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/wear.xml" qualifiers=""><string-array name="android_wear_capabilities" translatable="false">
         
         <item>@string/show_detail_capability_name</item>
-    </string-array></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/template-dimens.xml" qualifiers=""><dimen name="margin_small">8dp</dimen><dimen name="vertical_page_margin">@dimen/margin_medium</dimen><dimen name="margin_tiny">4dp</dimen><dimen name="margin_large">32dp</dimen><dimen name="margin_huge">64dp</dimen><dimen name="margin_medium">16dp</dimen><dimen name="horizontal_page_margin">@dimen/margin_medium</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/dimens.xml" qualifiers=""><item name="keyline3" type="dimen">@dimen/standard_margin</item><item name="keyline1" type="dimen">@dimen/standard_margin</item><dimen name="keyline2">72dp</dimen><dimen name="tiny_margin">4dp</dimen><dimen name="fab_margin">-8dp</dimen><dimen name="standard_margin">16dp</dimen><integer name="list_columns">1</integer><dimen name="small_margin">8dp</dimen><dimen name="image_size">120dp</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/colors.xml" qualifiers=""><color name="lighter_gray">#ddd</color><color name="transparent_actionbar_background">#22000000</color><color name="text_background">#90000000</color></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/template-styles.xml" qualifiers=""><style name="Theme.Base" parent="android:Theme.Light"/><style name="Widget.SampleMessage">
+    </string-array></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/template-dimens.xml" qualifiers=""><dimen name="margin_small">8dp</dimen><dimen name="vertical_page_margin">@dimen/margin_medium</dimen><dimen name="margin_tiny">4dp</dimen><dimen name="margin_large">32dp</dimen><dimen name="margin_huge">64dp</dimen><dimen name="margin_medium">16dp</dimen><dimen name="horizontal_page_margin">@dimen/margin_medium</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/dimens.xml" qualifiers=""><item name="keyline3" type="dimen">@dimen/standard_margin</item><dimen name="app_bar_height">180dp</dimen><item name="keyline1" type="dimen">@dimen/standard_margin</item><dimen name="keyline2">72dp</dimen><dimen name="tiny_margin">4dp</dimen><dimen name="fab_margin">-8dp</dimen><dimen name="text_margin">16dp</dimen><dimen name="standard_margin">16dp</dimen><integer name="list_columns">1</integer><dimen name="small_margin">8dp</dimen><dimen name="image_size">120dp</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/colors.xml" qualifiers=""><color name="lighter_gray">#ddd</color><color name="transparent_actionbar_background">#22000000</color><color name="text_background">#90000000</color></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values/template-styles.xml" qualifiers=""><style name="Theme.Base" parent="android:Theme.Light"/><style name="Widget.SampleMessage">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
     </style><style name="AppTheme" parent="Theme.Sample"/><style name="Theme.Sample" parent="Theme.Base"/><style name="Widget"/><style name="Widget.SampleMessageTile">
@@ -2004,9 +2092,12 @@ transferred).
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlHighlight">?colorAccent</item>
-    </style><style name="ActionBar.Detail" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    </style><style name="XYZAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/><style name="XYZAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/><style name="ActionBar.Detail" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="background">@color/transparent_actionbar_background</item>
         <item name="displayOptions">showHome|homeAsUp</item>
+    </style><style name="XYZAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style></file><file name="window_return" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/transition-v21/window_return.xml" qualifiers="v21" type="transition"/><file name="shared_move" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/transition-v21/shared_move.xml" qualifiers="v21" type="transition"/><file name="fade" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/transition-v21/fade.xml" qualifiers="v21" type="transition"/><file name="window_enter" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/transition-v21/window_enter.xml" qualifiers="v21" type="transition"/><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-w820dp/dimens.xml" qualifiers="w820dp-v13"><integer name="list_columns">2</integer></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-v11/template-styles.xml" qualifiers="v11"><style name="Theme.Base" parent="android:Theme.Holo.Light"/></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-v21/base-template-styles.xml" qualifiers="v21"><style name="Theme.Base" parent="android:Theme.Material.Light">
     </style></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-v21/dimens.xml" qualifiers="v21"><dimen name="fab_margin">8dp</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-v21/styles.xml" qualifiers="v21"><style name="XYZAppTheme" parent="XYZAppTheme.Base">
         <item name="android:windowContentTransitions">true</item>
@@ -2020,11 +2111,11 @@ transferred).
         <item name="android:windowAllowEnterTransitionOverlap">false</item>
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
         <item name="android:windowSharedElementsUseOverlay">false</item>
-    </style></file><file name="ic_action_map" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-xxhdpi/ic_action_map.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_stat_maps_pin_drop" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-xxhdpi/ic_stat_maps_pin_drop.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_action_map" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-mdpi/ic_action_map.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_stat_maps_pin_drop" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-mdpi/ic_stat_maps_pin_drop.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw400dp-v21/dimens.xml" qualifiers="sw400dp-v21"><dimen name="fab_margin">12dp</dimen></file><file name="ic_launcher" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="empty_photo" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-nodpi/empty_photo.png" qualifiers="nodpi-v4" type="drawable"/><file name="ic_launcher" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_action_map" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-hdpi/ic_action_map.png" qualifiers="hdpi-v4" type="drawable"/><file name="tile" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-hdpi/tile.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_stat_maps_pin_drop" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-hdpi/ic_stat_maps_pin_drop.png" qualifiers="hdpi-v4" type="drawable"/><file name="fragment_detail" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/fragment_detail.xml" qualifiers="" type="layout"/><file name="activity_main" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="fragment_main" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/fragment_main.xml" qualifiers="" type="layout"/><file name="list_row" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/list_row.xml" qualifiers="" type="layout"/><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw720dp/dimens.xml" qualifiers="sw720dp-v13"><dimen name="small_margin">12dp</dimen><dimen name="tiny_margin">12dp</dimen><dimen name="standard_margin">24dp</dimen><dimen name="image_size">250dp</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw600dp/template-dimens.xml" qualifiers="sw600dp-v13"><dimen name="vertical_page_margin">@dimen/margin_medium</dimen><dimen name="horizontal_page_margin">@dimen/margin_huge</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw600dp/dimens.xml" qualifiers="sw600dp-v13"><dimen name="tiny_margin">8dp</dimen><dimen name="standard_margin">24dp</dimen><dimen name="keyline2">80dp</dimen><dimen name="small_margin">12dp</dimen><dimen name="image_size">200dp</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw600dp/template-styles.xml" qualifiers="sw600dp-v13"><style name="Widget.SampleMessage">
+    </style></file><file name="ic_action_map" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-xxhdpi/ic_action_map.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_stat_maps_pin_drop" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-xxhdpi/ic_stat_maps_pin_drop.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_action_map" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-mdpi/ic_action_map.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_stat_maps_pin_drop" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-mdpi/ic_stat_maps_pin_drop.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw400dp-v21/dimens.xml" qualifiers="sw400dp-v21"><dimen name="fab_margin">12dp</dimen></file><file name="ic_launcher" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="empty_photo" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-nodpi/empty_photo.png" qualifiers="nodpi-v4" type="drawable"/><file name="ic_launcher" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_action_map" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-hdpi/ic_action_map.png" qualifiers="hdpi-v4" type="drawable"/><file name="tile" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-hdpi/tile.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_stat_maps_pin_drop" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/drawable-hdpi/ic_stat_maps_pin_drop.png" qualifiers="hdpi-v4" type="drawable"/><file name="activity_scrolling" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/activity_scrolling.xml" qualifiers="" type="layout"/><file name="fragment_detail" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/fragment_detail.xml" qualifiers="" type="layout"/><file name="activity_main" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="fragment_main" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/fragment_main.xml" qualifiers="" type="layout"/><file name="list_row" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/list_row.xml" qualifiers="" type="layout"/><file name="content_scrolling" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/content_scrolling.xml" qualifiers="" type="layout"/><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw720dp/dimens.xml" qualifiers="sw720dp-v13"><dimen name="small_margin">12dp</dimen><dimen name="tiny_margin">12dp</dimen><dimen name="standard_margin">24dp</dimen><dimen name="image_size">250dp</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw600dp/template-dimens.xml" qualifiers="sw600dp-v13"><dimen name="vertical_page_margin">@dimen/margin_medium</dimen><dimen name="horizontal_page_margin">@dimen/margin_huge</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw600dp/dimens.xml" qualifiers="sw600dp-v13"><dimen name="tiny_margin">8dp</dimen><dimen name="standard_margin">24dp</dimen><dimen name="keyline2">80dp</dimen><dimen name="small_margin">12dp</dimen><dimen name="image_size">200dp</dimen></file><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw600dp/template-styles.xml" qualifiers="sw600dp-v13"><style name="Widget.SampleMessage">
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="android:lineSpacingMultiplier">1.2</item>
         <item name="android:shadowDy">-6.5</item>
-    </style></file><file name="main" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/menu/main.xml" qualifiers="" type="menu"/><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw400dp/dimens.xml" qualifiers="sw400dp-v13"><dimen name="image_size">140dp</dimen><dimen name="fab_margin">0dp</dimen><dimen name="tiny_margin">8dp</dimen><dimen name="standard_margin">24dp</dimen><dimen name="small_margin">12dp</dimen></file></source><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/common/res"/><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/template/res"/><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/generated/res/rs/debug"/><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
+    </style></file><file name="menu_scrolling" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/menu/menu_scrolling.xml" qualifiers="" type="menu"/><file name="main" path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/menu/main.xml" qualifiers="" type="menu"/><file path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/values-sw400dp/dimens.xml" qualifiers="sw400dp-v13"><dimen name="image_size">140dp</dimen><dimen name="fab_margin">0dp</dimen><dimen name="tiny_margin">8dp</dimen><dimen name="standard_margin">24dp</dimen><dimen name="small_margin">12dp</dimen></file></source><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/common/res"/><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/template/res"/><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/generated/res/rs/debug"/><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
             
             <enum name="src_over" value="3"/>
             
