@@ -1,6 +1,7 @@
 
 package com.example.android.xyztouristattractions.common;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -115,6 +116,11 @@ public class ToDoAttractionsList {
 
     public void setPlaceCode(String placeCode) {
         this.placeCode = placeCode;
+    }
+
+    public LatLng getLocation(){
+        LatLng latLng=new LatLng(latitude,longitude);
+        return latLng;
     }
 
 }

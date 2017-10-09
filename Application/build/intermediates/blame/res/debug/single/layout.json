@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
@@ -70,6 +70,10 @@
     {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/city_attraction_item.xml",
+        "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/city_attraction_item.xml"
     },
     {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",

@@ -35,6 +35,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.android.xyztouristattractions.R;
+import com.example.android.xyztouristattractions.adapter.CityAttractionAdapter;
 import com.example.android.xyztouristattractions.common.Attraction;
 import com.example.android.xyztouristattractions.common.Constants;
 import com.example.android.xyztouristattractions.common.Utils;
@@ -53,6 +54,7 @@ public class DetailFragment extends Fragment {
 
     private static final String EXTRA_ATTRACTION = "attraction";
     private Attraction mAttraction;
+    AttractionsRecyclerView attractionsRecyclerView;
 
     public static DetailFragment createInstance(String attractionName) {
         DetailFragment detailFragment = new DetailFragment();
@@ -80,6 +82,7 @@ public class DetailFragment extends Fragment {
         TextView nameTextView = (TextView) view.findViewById(R.id.nameTextView);
         TextView descTextView = (TextView) view.findViewById(R.id.descriptionTextView);
         TextView distanceTextView = (TextView) view.findViewById(R.id.distanceTextView);
+        attractionsRecyclerView=(AttractionsRecyclerView)view.findViewById(R.id.list);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
         FloatingActionButton mapFab = (FloatingActionButton) view.findViewById(R.id.mapFab);
 
@@ -111,6 +114,9 @@ public class DetailFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        CityAttractionAdapter cityAttractionAdapter=new CityAttractionAdapter(mAttraction.getToDoAttractionsList(),getActivity());
+        attractionsRecyclerView.setAdapter(cityAttractionAdapter);
 
         return view;
     }
