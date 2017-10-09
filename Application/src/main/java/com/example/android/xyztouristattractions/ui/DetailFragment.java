@@ -17,33 +17,48 @@
 package com.example.android.xyztouristattractions.ui;
 
 import android.app.TaskStackBuilder;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.NavUtils;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.android.xyztouristattractions.R;
 import com.example.android.xyztouristattractions.adapter.CityAttractionAdapter;
+import com.example.android.xyztouristattractions.api.ApiClient;
+import com.example.android.xyztouristattractions.api.ApiInterface;
 import com.example.android.xyztouristattractions.common.Attraction;
 import com.example.android.xyztouristattractions.common.Constants;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.provider.TouristAttractions;
+import com.example.android.xyztouristattractions.test.TestModel;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.gson.Gson;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * The tourist attraction detail fragment which contains the details of a
@@ -118,8 +133,11 @@ public class DetailFragment extends Fragment {
         CityAttractionAdapter cityAttractionAdapter=new CityAttractionAdapter(mAttraction.getToDoAttractionsList(),getActivity());
         attractionsRecyclerView.setAdapter(cityAttractionAdapter);
 
+
+
         return view;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

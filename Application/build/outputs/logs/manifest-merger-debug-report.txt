@@ -27,15 +27,11 @@ ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Ap
 	android:name
 		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:22:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:23:5-25:31
-	tools:node
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:25:9-28
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:23:5-25:5
 	android:name
 		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:24:9-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:26:5-28:31
-	tools:node
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:28:9-28
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:26:5-28:10
 	android:name
 		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:27:9-65
 application

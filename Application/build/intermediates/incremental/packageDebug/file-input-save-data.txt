@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Oct 09 15:06:45 IST 2017
+#Mon Oct 09 19:13:23 IST 2017
 210.set=ANDROID_RESOURCE
 282.file=/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/resources-debug.ap_/res/layout/design_navigation_menu_item.xml
 14.set=ANDROID_RESOURCE

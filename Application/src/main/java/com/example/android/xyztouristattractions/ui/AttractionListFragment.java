@@ -21,31 +21,45 @@ import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.android.xyztouristattractions.R;
+import com.example.android.xyztouristattractions.api.ApiClient;
+import com.example.android.xyztouristattractions.api.ApiInterface;
 import com.example.android.xyztouristattractions.common.Attraction;
 import com.example.android.xyztouristattractions.common.Constants;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.provider.TouristAttractions;
 import com.example.android.xyztouristattractions.service.UtilityService;
+import com.example.android.xyztouristattractions.test.TestModel;
 import com.google.android.gms.location.FusedLocationProviderApi;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.gson.Gson;
 import com.google.maps.android.SphericalUtil;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * The main tourist attraction fragment which contains a list of attractions
@@ -60,7 +74,8 @@ public class AttractionListFragment extends Fragment {
     private boolean mItemClicked;
 
     public AttractionListFragment() {}
-
+    int current;
+    List<Attraction> attractions;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -69,7 +84,7 @@ public class AttractionListFragment extends Fragment {
                 * Constants.IMAGE_ANIM_MULTIPLIER;
 
         mLatestLocation = Utils.getLocation(getActivity());
-        List<Attraction> attractions = loadAttractionsFromLocation(mLatestLocation);
+        attractions= loadAttractionsFromLocation(mLatestLocation);
         mAdapter = new AttractionAdapter(getActivity(), attractions);
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
@@ -79,7 +94,55 @@ public class AttractionListFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(mAdapter);
 
+
+       // getData(attractions.get(0).getPlaceCode());
+
         return view;
+    }
+
+
+    public void getData(final String placeCode){
+        ApiInterface apiService = ApiClient.getDataAPIClient(ApiClient.BASE_URL).create(ApiInterface.class);
+        Call<TestModel> call=  apiService.getCityData(placeCode);
+        call.enqueue(new Callback<TestModel>() {
+            @Override
+            public void onResponse(Call<TestModel> call, Response<TestModel> response) {
+                TestModel testModel=response.body();
+                String jsonJson=new Gson().toJson(testModel);
+                generateNoteOnSD(getActivity(),"test.json",jsonJson+",");
+                Log.e("placecode",placeCode);
+                current++;
+                if(current<=attractions.size()-1){
+                    getData(attractions.get(current).getPlaceCode());
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<TestModel> call, Throwable t) {
+                Log.d("Onfailer",call.toString());
+            }
+        });
+
+    }
+
+
+
+    public void generateNoteOnSD(Context context, String sFileName, String sBody) {
+        try {
+            File root = new File(Environment.getExternalStorageDirectory(), "Notes");
+            if (!root.exists()) {
+                root.mkdirs();
+            }
+            File gpxfile = new File(root, sFileName);
+            FileWriter writer = new FileWriter(gpxfile,true);
+            writer.append(sBody);
+            writer.flush();
+            writer.close();
+            //Toast.makeText(context, "Saved", Toast.LENGTH_SHORT).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
