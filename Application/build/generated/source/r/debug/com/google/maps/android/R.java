@@ -34,41 +34,41 @@ public final class R {
         public static final int common_full_open_on_phone = 0x7f020057;
     }
     public static final class id {
-        public static final int adjust_height = 0x7f0f003b;
-        public static final int adjust_width = 0x7f0f003c;
-        public static final int hybrid = 0x7f0f003d;
-        public static final int none = 0x7f0f0015;
-        public static final int normal = 0x7f0f0011;
-        public static final int satellite = 0x7f0f003e;
-        public static final int terrain = 0x7f0f003f;
-        public static final int text = 0x7f0f0009;
+        public static final int adjust_height = 0x7f10003b;
+        public static final int adjust_width = 0x7f10003c;
+        public static final int hybrid = 0x7f10003d;
+        public static final int none = 0x7f100015;
+        public static final int normal = 0x7f100011;
+        public static final int satellite = 0x7f10003e;
+        public static final int terrain = 0x7f10003f;
+        public static final int text = 0x7f100009;
     }
     public static final class integer {
-        public static final int google_play_services_version = 0x7f0c0007;
+        public static final int google_play_services_version = 0x7f0d0007;
     }
     public static final class layout {
-        public static final int text_bubble = 0x7f040043;
+        public static final int text_bubble = 0x7f040044;
     }
     public static final class string {
-        public static final int common_google_play_services_enable_button = 0x7f080013;
-        public static final int common_google_play_services_enable_text = 0x7f080014;
-        public static final int common_google_play_services_enable_title = 0x7f080015;
-        public static final int common_google_play_services_install_button = 0x7f080016;
-        public static final int common_google_play_services_install_title = 0x7f080018;
-        public static final int common_google_play_services_notification_ticker = 0x7f080019;
-        public static final int common_google_play_services_unknown_issue = 0x7f08001a;
-        public static final int common_google_play_services_unsupported_text = 0x7f08001b;
-        public static final int common_google_play_services_update_button = 0x7f08001c;
-        public static final int common_google_play_services_update_text = 0x7f08001d;
-        public static final int common_google_play_services_update_title = 0x7f08001e;
-        public static final int common_open_on_phone = 0x7f080021;
-        public static final int common_signin_button_text = 0x7f080022;
-        public static final int common_signin_button_text_long = 0x7f080023;
+        public static final int common_google_play_services_enable_button = 0x7f090013;
+        public static final int common_google_play_services_enable_text = 0x7f090014;
+        public static final int common_google_play_services_enable_title = 0x7f090015;
+        public static final int common_google_play_services_install_button = 0x7f090016;
+        public static final int common_google_play_services_install_title = 0x7f090018;
+        public static final int common_google_play_services_notification_ticker = 0x7f090019;
+        public static final int common_google_play_services_unknown_issue = 0x7f09001a;
+        public static final int common_google_play_services_unsupported_text = 0x7f09001b;
+        public static final int common_google_play_services_update_button = 0x7f09001c;
+        public static final int common_google_play_services_update_text = 0x7f09001d;
+        public static final int common_google_play_services_update_title = 0x7f09001e;
+        public static final int common_open_on_phone = 0x7f090021;
+        public static final int common_signin_button_text = 0x7f090022;
+        public static final int common_signin_button_text_long = 0x7f090023;
     }
     public static final class style {
-        public static final int Bubble_TextAppearance_Dark = 0x7f0a00d8;
-        public static final int Bubble_TextAppearance_Light = 0x7f0a00d9;
-        public static final int ClusterIcon_TextAppearance = 0x7f0a00da;
+        public static final int Bubble_TextAppearance_Dark = 0x7f0b00d8;
+        public static final int Bubble_TextAppearance_Light = 0x7f0b00d9;
+        public static final int ClusterIcon_TextAppearance = 0x7f0b00da;
     }
     public static final class styleable {
         public static final int[] LoadingImageView = { 0x7f0100d7, 0x7f0100d8, 0x7f0100d9 };

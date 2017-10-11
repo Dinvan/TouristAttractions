@@ -47,12 +47,25 @@ import com.example.android.xyztouristattractions.common.Constants;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.provider.TouristAttractions;
 import com.example.android.xyztouristattractions.test.TestModel;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.gson.Gson;
+import com.google.maps.DirectionsApi;
+import com.google.maps.DirectionsApiRequest;
+import com.google.maps.GeoApiContext;
+import com.google.maps.model.DirectionsResult;
+import com.google.maps.model.DirectionsRoute;
+import com.google.maps.model.TravelMode;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -65,11 +78,12 @@ import retrofit2.Response;
  * a single attraction (contained inside
  * {@link com.example.android.xyztouristattractions.ui.DetailActivity}).
  */
-public class DetailFragment extends Fragment {
+public class DetailFragment extends Fragment implements OnMapReadyCallback {
 
     private static final String EXTRA_ATTRACTION = "attraction";
     private Attraction mAttraction;
     AttractionsRecyclerView attractionsRecyclerView;
+    GoogleMap googleMap;
 
     public static DetailFragment createInstance(String attractionName) {
         DetailFragment detailFragment = new DetailFragment();
@@ -79,7 +93,8 @@ public class DetailFragment extends Fragment {
         return detailFragment;
     }
 
-    public DetailFragment() {}
+    public DetailFragment() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -97,7 +112,7 @@ public class DetailFragment extends Fragment {
         TextView nameTextView = (TextView) view.findViewById(R.id.nameTextView);
         TextView descTextView = (TextView) view.findViewById(R.id.descriptionTextView);
         TextView distanceTextView = (TextView) view.findViewById(R.id.distanceTextView);
-        attractionsRecyclerView=(AttractionsRecyclerView)view.findViewById(R.id.list);
+        attractionsRecyclerView = (AttractionsRecyclerView) view.findViewById(R.id.list);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
         FloatingActionButton mapFab = (FloatingActionButton) view.findViewById(R.id.mapFab);
 
@@ -130,11 +145,11 @@ public class DetailFragment extends Fragment {
             }
         });
 
-        CityAttractionAdapter cityAttractionAdapter=new CityAttractionAdapter(mAttraction.getToDoAttractionsList(),getActivity());
+        CityAttractionAdapter cityAttractionAdapter = new CityAttractionAdapter(mAttraction.getToDoAttractionsList(), getActivity());
         attractionsRecyclerView.setAdapter(cityAttractionAdapter);
+        setMap();
 
-
-
+        getRoute();
         return view;
     }
 
@@ -177,13 +192,70 @@ public class DetailFragment extends Fragment {
      */
     private Attraction findAttraction(String attractionName) {
 
-            List<Attraction> attractions = TouristAttractions.getAttractions(getActivity());
-            for (Attraction attraction : attractions) {
-                if (attractionName.equals(attraction.getCityListData().getPlaceName())) {
-                    return attraction;
+        List<Attraction> attractions = TouristAttractions.getAttractions(getActivity());
+        for (Attraction attraction : attractions) {
+            if (attractionName.equals(attraction.getCityListData().getPlaceName())) {
+                return attraction;
+            }
+        }
+
+        return null;
+    }
+
+    public void getRoute() {
+        GeoApiContext context = new GeoApiContext().setApiKey("AIzaSyA2Qz6K0nwKqk4nIz8Q3F01Vb_x7JYNsUc");
+
+        DirectionsApiRequest apiRequest = DirectionsApi.newRequest(context);
+        apiRequest.origin(new com.google.maps.model.LatLng(Utils.getLocation(getActivity()).latitude, Utils.getLocation(getActivity()).longitude));
+        apiRequest.destination(new com.google.maps.model.LatLng(Utils.getLocation(getActivity()).latitude, Utils.getLocation(getActivity()).longitude));
+        com.google.maps.model.LatLng[] wayPoints = new com.google.maps.model.LatLng[mAttraction.getToDoAttractionsList().size()];
+        for (int i = 0; i < mAttraction.getToDoAttractionsList().size(); i++) {
+            wayPoints[i] = new com.google.maps.model.LatLng(mAttraction.getToDoAttractionsList().get(i).getLatitude(), mAttraction.getToDoAttractionsList().get(i).getLongitude());
+        }
+        apiRequest.waypoints(wayPoints);
+        apiRequest.mode(TravelMode.DRIVING); //set travelling mode
+
+        apiRequest.setCallback(new com.google.maps.PendingResult.Callback<DirectionsResult>() {
+            @Override
+            public void onResult(DirectionsResult result) {
+                DirectionsRoute[] routes = result.routes;
+                Log.e("onresult", routes.length + "");
+                if (googleMap != null) {
+                    DirectionsRoute route = routes[0];
+                    List<LatLng> directionPointList = getLatlngList(route.overviewPolyline.decodePath());
+                    googleMap.addPolyline(new PolylineOptions().addAll(directionPointList));
+
                 }
             }
 
-        return null;
+            @Override
+            public void onFailure(Throwable e) {
+                Log.e("onresult", e.getMessage() + "");
+            }
+        });
+    }
+
+    public static List<LatLng> getLatlngList(List<com.google.maps.model.LatLng> latLngList) {
+        List<LatLng> convertedLatLngList = new ArrayList<>();
+        for (int i = 0; i < latLngList.size(); i++) {
+
+            com.google.maps.model.LatLng toConvetLatLng = latLngList.get(i);
+            LatLng covnetedlatLng = new LatLng(toConvetLatLng.lat, toConvetLatLng.lng);
+            convertedLatLngList.add(covnetedlatLng);
+        }
+        return convertedLatLngList;
+    }
+
+
+    SupportMapFragment mapFragment;
+
+    public void setMap() {
+        mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        this.googleMap = googleMap;
     }
 }

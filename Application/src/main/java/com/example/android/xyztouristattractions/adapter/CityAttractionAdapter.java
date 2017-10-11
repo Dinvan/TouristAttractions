@@ -1,20 +1,39 @@
 package com.example.android.xyztouristattractions.adapter;
+
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.bitmap.GlideBitmapDrawable;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
+import com.cloudinary.android.MediaManager;
+import com.cloudinary.android.callback.ErrorInfo;
+import com.cloudinary.android.callback.UploadCallback;
 import com.example.android.xyztouristattractions.R;
 import com.example.android.xyztouristattractions.common.Constants;
 import com.example.android.xyztouristattractions.common.ToDoAttractionsList;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.google.android.gms.maps.model.LatLng;
+
+import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by advanz101 on 9/10/17.
@@ -29,7 +48,7 @@ public class CityAttractionAdapter extends RecyclerView.Adapter<CityAttractionAd
     public CityAttractionAdapter(List<ToDoAttractionsList> cityAttractions, Context context) {
         this.cityAttractions = cityAttractions;
         this.context = context;
-        mLatestLocation=Utils.getLocation(context);
+        mLatestLocation = Utils.getLocation(context);
     }
 
     @Override

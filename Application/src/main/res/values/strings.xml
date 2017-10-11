@@ -56,5 +56,6 @@ appear further down your stream
     </string>
     <string name="action_settings">Settings</string>
     <string name="attractions">Attractions</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

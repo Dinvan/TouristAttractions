@@ -19,9 +19,12 @@ package com.example.android.xyztouristattractions.ui;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.widget.RecyclerView;
@@ -36,6 +39,16 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.bitmap.GlideBitmapDrawable;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
+import com.cloudinary.Cloudinary;
+import com.cloudinary.android.MediaManager;
+import com.cloudinary.android.callback.ErrorInfo;
+import com.cloudinary.android.callback.UploadCallback;
+import com.cloudinary.android.payload.Payload;
+import com.cloudinary.utils.ObjectUtils;
 import com.example.android.xyztouristattractions.R;
 import com.example.android.xyztouristattractions.api.ApiClient;
 import com.example.android.xyztouristattractions.api.ApiInterface;
@@ -45,6 +58,7 @@ import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.provider.TouristAttractions;
 import com.example.android.xyztouristattractions.service.UtilityService;
 import com.example.android.xyztouristattractions.test.TestModel;
+import com.google.android.gms.common.images.ImageManager;
 import com.google.android.gms.location.FusedLocationProviderApi;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
@@ -56,6 +70,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -73,46 +88,47 @@ public class AttractionListFragment extends Fragment {
     private int mImageSize;
     private boolean mItemClicked;
 
-    public AttractionListFragment() {}
-    int current;
+    public AttractionListFragment() {
+    }
+
+    int current=405;
     List<Attraction> attractions;
+    ImageView image;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Load a larger size image to make the activity transition to the detail screen smooth
-        mImageSize = getResources().getDimensionPixelSize(R.dimen.image_size)
-                * Constants.IMAGE_ANIM_MULTIPLIER;
+        mImageSize = getResources().getDimensionPixelSize(R.dimen.image_size) * Constants.IMAGE_ANIM_MULTIPLIER;
 
         mLatestLocation = Utils.getLocation(getActivity());
-        attractions= loadAttractionsFromLocation(mLatestLocation);
+        attractions = loadAttractionsFromLocation(mLatestLocation);
         mAdapter = new AttractionAdapter(getActivity(), attractions);
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+        image=(ImageView) view.findViewById(R.id.image);
         AttractionsRecyclerView recyclerView =
                 (AttractionsRecyclerView) view.findViewById(android.R.id.list);
         recyclerView.setEmptyView(view.findViewById(android.R.id.empty));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(mAdapter);
 
-
-       // getData(attractions.get(0).getPlaceCode());
-
+        //downloadImage(attractions.get(current).getCityListData().getCityImagePath());
         return view;
     }
 
 
-    public void getData(final String placeCode){
+    public void getData(final String placeCode) {
         ApiInterface apiService = ApiClient.getDataAPIClient(ApiClient.BASE_URL).create(ApiInterface.class);
-        Call<TestModel> call=  apiService.getCityData(placeCode);
+        Call<TestModel> call = apiService.getCityData(placeCode);
         call.enqueue(new Callback<TestModel>() {
             @Override
             public void onResponse(Call<TestModel> call, Response<TestModel> response) {
-                TestModel testModel=response.body();
-                String jsonJson=new Gson().toJson(testModel);
-                generateNoteOnSD(getActivity(),"test.json",jsonJson+",");
-                Log.e("placecode",placeCode);
+                TestModel testModel = response.body();
+                String jsonJson = new Gson().toJson(testModel);
+                generateNoteOnSD(getActivity(), "test.json", jsonJson + ",");
+                Log.e("placecode", placeCode);
                 current++;
-                if(current<=attractions.size()-1){
+                if (current <= attractions.size() - 1) {
                     getData(attractions.get(current).getPlaceCode());
                 }
 
@@ -120,12 +136,89 @@ public class AttractionListFragment extends Fragment {
 
             @Override
             public void onFailure(Call<TestModel> call, Throwable t) {
-                Log.d("Onfailer",call.toString());
+                Log.d("Onfailer", call.toString());
             }
         });
 
     }
 
+    public void downloadImage(String imagePath) {
+
+
+            int mImageSize = getActivity().getResources().getDimensionPixelSize(R.dimen.image_size)
+                    * Constants.IMAGE_ANIM_MULTIPLIER;
+            Glide.with(getActivity())
+                    .load(imagePath)
+                    .placeholder(R.drawable.empty_photo)
+                    .override(mImageSize, mImageSize)
+
+                    .listener(new RequestListener<String, GlideDrawable>() {
+                        @Override
+                        public boolean onException(Exception e, String s, Target<GlideDrawable> target, boolean b) {
+                            return false;
+                        }
+
+                        @Override
+                        public boolean onResourceReady(GlideDrawable glideDrawable, String s, Target<GlideDrawable> target, boolean b, boolean b1) {
+
+
+                            GlideBitmapDrawable glideBitmapDrawable = (GlideBitmapDrawable) glideDrawable;
+                            // Convert to Bitmap
+                            Bitmap bitmap = glideBitmapDrawable.getBitmap();
+                            String path = MediaStore.Images.Media.insertImage(getActivity().getContentResolver(), bitmap, "Title", null);
+                            Uri uri = Uri.parse(path);
+
+
+                            MediaManager.get().upload(uri).callback(new UploadCallback() {
+                                @Override
+                                public void onStart(String requestId) {
+                                    Log.e("onStart", requestId + "");
+                                }
+
+                                @Override
+                                public void onProgress(String requestId, long bytes, long totalBytes) {
+                                    // example code starts here
+                                    Double progress = (double) bytes / totalBytes;
+                                    Log.e("progress", progress + "");
+                                    // post progress to app UI (e.g. progress bar, notification)
+                                    // example code ends here
+                                }
+
+                                @Override
+                                public void onSuccess(String requestId, Map resultData) {
+                                    Log.e("onSuccess "+current, resultData.toString());
+                                    attractions.get(current).getCityListData().setCityImagePath(resultData.get("url").toString());
+                                    Gson gson = new Gson();
+                                    generateNoteOnSD(getActivity(), "Attractions.json", gson.toJson(attractions));
+                                    current++;
+                                    if (current <= attractions.size() - 1) {
+                                        downloadImage(attractions.get(current).getCityListData().getCityImagePath());
+                                    }
+                                }
+
+                                @Override
+                                public void onError(String requestId, ErrorInfo error) {
+                                    Log.e("onError", error.getDescription());
+                                }
+
+                                @Override
+                                public void onReschedule(String requestId, ErrorInfo error) {
+                                    // your code here
+                                }
+                            })
+                                    .dispatch();
+
+
+                            return false;
+                        }
+                    }
+
+                    ).into(image);
+
+
+
+
+    }
 
 
     public void generateNoteOnSD(Context context, String sFileName, String sBody) {
@@ -135,7 +228,7 @@ public class AttractionListFragment extends Fragment {
                 root.mkdirs();
             }
             File gpxfile = new File(root, sFileName);
-            FileWriter writer = new FileWriter(gpxfile,true);
+            FileWriter writer = new FileWriter(gpxfile);
             writer.append(sBody);
             writer.flush();
             writer.close();
@@ -143,6 +236,8 @@ public class AttractionListFragment extends Fragment {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 
     @Override
@@ -172,10 +267,10 @@ public class AttractionListFragment extends Fragment {
         }
     };
 
-    private  List<Attraction> loadAttractionsFromLocation(final LatLng curLatLng) {
-        String closestCity = TouristAttractions.getClosestCity(curLatLng,getActivity());
+    private List<Attraction> loadAttractionsFromLocation(final LatLng curLatLng) {
+        String closestCity = TouristAttractions.getClosestCity(curLatLng, getActivity());
         if (closestCity != null) {
-            List<Attraction> attractions =  TouristAttractions.getAttractions(getActivity());
+            List<Attraction> attractions = TouristAttractions.getAttractions(getActivity());
             if (curLatLng != null) {
                 Collections.sort(attractions,
                         new Comparator<Attraction>() {

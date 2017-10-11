@@ -1,8 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:16:1-91:12
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:16:1-107:12
 	package
 		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:18:5-56
+		INJECTED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml
+		INJECTED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml
 		INJECTED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml
@@ -15,7 +17,8 @@ ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Ap
 		INJECTED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:20:5-67
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:20:5-66
+MERGED from [com.cloudinary:cloudinary-android:1.20.0] /home/advanz101/.android/build-cache/e6849b86bbc3f6854396d531a1c66b6ce9199c7a/output/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/advanz101/.android/build-cache/ea870c5688387c47e4075d18d86e696720e4c01e/output/AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:20:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
@@ -24,144 +27,173 @@ ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Ap
 		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:22:5-68
+MERGED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:12:5-68
 	android:name
 		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:22:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:23:5-25:5
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:23:5-80
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:24:9-64
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:23:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:26:5-28:10
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:24:5-81
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:27:9-65
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:24:22-78
 application
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:30:5-89:19
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:26:5-105:19
+MERGED from [TouristAttractions:Shared:unspecified] /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:24:5-47
 MERGED from [com.google.android.gms:play-services-location:10.2.4] /home/advanz101/.android/build-cache/aa8efd667d1a0d0833475b9ae0e3145b60df1f2e/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/advanz101/.android/build-cache/3559fe1aebf4dfae2cfbd5d9bba280a1870a56d1/output/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:design:25.3.1] /home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/advanz101/.android/build-cache/40ba028a7c2ad1e031cfa966bfceff3a156600f3/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/advanz101/.android/build-cache/97753598029afe0d879406f65de684d49a6055f4/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:transition:25.3.1] /home/advanz101/.android/build-cache/9ee523aff76d449445099b2d5613537dafccd04f/output/AndroidManifest.xml:26:5-20
-MERGED from [TouristAttractions:Shared:unspecified] /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:24:5-47
-MERGED from [com.android.support:support-v13:25.3.1] /home/advanz101/.android/build-cache/19698ae17ecdf32673ce59a6f875299471f115b2/output/AndroidManifest.xml:29:5-20
 MERGED from [com.google.android.gms:play-services-wearable:10.2.4] /home/advanz101/.android/build-cache/a27992ab3c9efee58822211d89cd672fc170312c/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/advanz101/.android/build-cache/2b3bd94dd2d921b20f3485b5e0ae13c0b9dd6739/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/advanz101/.android/build-cache/97f77e0c5685217955045898f957b951c5c4d955/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v13:25.3.1] /home/advanz101/.android/build-cache/19698ae17ecdf32673ce59a6f875299471f115b2/output/AndroidManifest.xml:29:5-20
+MERGED from [com.cloudinary:cloudinary-android:1.20.0] /home/advanz101/.android/build-cache/e6849b86bbc3f6854396d531a1c66b6ce9199c7a/output/AndroidManifest.xml:13:5-67
+MERGED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:16:5-58:19
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/advanz101/.android/build-cache/ea870c5688387c47e4075d18d86e696720e4c01e/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/advanz101/.android/build-cache/7a0b5617ba607b8ad6e821afe1d19089091a4177/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/advanz101/.android/build-cache/c7fc2f9861b7dbccd3119906bee8c44e4aa9254f/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/advanz101/.android/build-cache/0e36a4049024237e081323b06a410aa1b8b0ca21/output/AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support:support-v4:25.3.1] /home/advanz101/.android/build-cache/14e32da20f1b668dd8a06eb0dfccdc4759b2b65a/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] /home/advanz101/.android/build-cache/a2dc162fa8a59d857b87d491a918db488024941d/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] /home/advanz101/.android/build-cache/e46ed5aadaa70ad6a173992cba77701f6fb0eefb/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/advanz101/.android/build-cache/cb33d373f6b4d37237a681281a51c69be334fb3d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] /home/advanz101/.android/build-cache/f08a894a9d053aea82ce651cbd6ef96c0988e3ef/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] /home/advanz101/.android/build-cache/db153c7f01df1e1f42d97c985bb195259732769e/output/AndroidManifest.xml:29:5-20
-MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/advanz101/.android/build-cache/3559fe1aebf4dfae2cfbd5d9bba280a1870a56d1/output/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/advanz101/.android/build-cache/8a39bac2f51775c7fe9fe64ae43221e8dc54ed0c/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] /home/advanz101/.android/build-cache/630ec570605448236b7ef4f7465835ac12c8ca93/output/AndroidManifest.xml:25:5-29:19
 	android:label
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:34:9-41
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:30:9-41
 	android:fullBackupContent
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:32:9-41
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:28:9-41
+		REJECTED from [com.cloudinary:cloudinary-android:1.20.0] /home/advanz101/.android/build-cache/e6849b86bbc3f6854396d531a1c66b6ce9199c7a/output/AndroidManifest.xml:13:18-64
+	tools:ignore
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:16:18-44
 	android:allowBackup
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:31:9-35
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:27:9-35
 	android:icon
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:33:9-43
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:29:9-43
 	android:theme
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:35:9-43
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:31:9-43
+	tools:replace
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:32:9-50
+meta-data#CLOUDINARY_URL
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:33:9-35:55
+	android:value
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:35:13-52
+	android:name
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:34:13-42
 activity#com.example.android.xyztouristattractions.ui.AttractionListActivity
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:36:9-44:20
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:37:9-45:20
 	android:label
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:38:13-45
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:39:13-45
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:37:13-54
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:38:13-54
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:39:13-43:29
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:40:17-69
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:40:25-66
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:42:17-77
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:42:27-74
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:43:27-74
 activity#com.example.android.xyztouristattractions.ui.DetailActivity
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:45:9-49:57
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:46:9-50:57
 	android:label
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:47:13-45
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:48:13-45
 	android:parentActivityName
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:48:13-68
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:49:13-68
 	android:theme
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:49:13-54
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:50:13-54
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:46:13-46
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:47:13-46
 receiver#com.example.android.xyztouristattractions.service.UtilityReceiver
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:51:9-61
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:52:9-61
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:51:19-58
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:52:19-58
 service#com.example.android.xyztouristattractions.service.UtilityService
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:53:9-59
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:54:9-59
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:53:18-56
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:54:18-56
 service#com.example.android.xyztouristattractions.service.ListenerService
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:54:9-76:19
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:55:9-77:19
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:54:18-57
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:55:18-57
 intent-filter#com.google.android.gms.wearable.MESSAGE_RECEIVED
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:55:13-75:29
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:56:13-76:29
 action#com.google.android.gms.wearable.MESSAGE_RECEIVED
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:58:17-91
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:59:17-91
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:58:25-88
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:59:25-88
 data
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:61:17-64:45
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:62:17-65:45
 	android:host
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:62:21-37
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:63:21-37
 	android:scheme
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:64:21-42
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:65:21-42
 	android:pathPrefix
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:63:21-48
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:64:21-48
 meta-data#com.google.android.gms.version
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:78:9-80:69
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/advanz101/.android/build-cache/97f77e0c5685217955045898f957b951c5c4d955/output/AndroidManifest.xml:20:9-121
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:79:9-81:69
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/advanz101/.android/build-cache/0e36a4049024237e081323b06a410aa1b8b0ca21/output/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:80:13-66
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:81:13-66
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:79:13-58
-meta-data#com.example.android.xyztouristattractions.config.GlideConfiguration
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:81:9-83:43
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:80:13-58
+meta-data#com.info.imagepost.config.GlideConfiguration
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:82:9-84:43
 	android:value
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:83:13-40
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:84:13-40
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:82:13-95
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:83:13-72
 activity#com.example.android.xyztouristattractions.ui.ScrollingActivity
-ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:85:9-88:71
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:86:9-89:62
 	android:label
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:87:13-61
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:88:13-61
 	android:theme
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:88:13-59
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:89:13-59
 	android:name
-		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:86:13-49
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:87:13-49
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:98:9-100:55
+	android:value
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:100:13-52
+	android:name
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:99:13-58
+activity#com.example.android.xyztouristattractions.ui.MapsActivity
+ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:102:9-104:68
+	android:label
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:104:13-56
+	android:name
+		ADDED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml:103:13-44
 uses-sdk
 INJECTED from /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [TouristAttractions:Shared:unspecified] /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:10.2.4] /home/advanz101/.android/build-cache/aa8efd667d1a0d0833475b9ae0e3145b60df1f2e/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/advanz101/.android/build-cache/3559fe1aebf4dfae2cfbd5d9bba280a1870a56d1/output/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:design:25.3.1] /home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/advanz101/.android/build-cache/40ba028a7c2ad1e031cfa966bfceff3a156600f3/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/advanz101/.android/build-cache/97753598029afe0d879406f65de684d49a6055f4/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/advanz101/.android/build-cache/5931e034b543e39955041a09138c3c5e7c332c5f/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.3.1] /home/advanz101/.android/build-cache/9ee523aff76d449445099b2d5613537dafccd04f/output/AndroidManifest.xml:20:5-44
-MERGED from [TouristAttractions:Shared:unspecified] /home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.support:support-v13:25.3.1] /home/advanz101/.android/build-cache/19698ae17ecdf32673ce59a6f875299471f115b2/output/AndroidManifest.xml:21:5-23:55
 MERGED from [com.google.android.gms:play-services-wearable:10.2.4] /home/advanz101/.android/build-cache/a27992ab3c9efee58822211d89cd672fc170312c/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/advanz101/.android/build-cache/2b3bd94dd2d921b20f3485b5e0ae13c0b9dd6739/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/advanz101/.android/build-cache/97f77e0c5685217955045898f957b951c5c4d955/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v13:25.3.1] /home/advanz101/.android/build-cache/19698ae17ecdf32673ce59a6f875299471f115b2/output/AndroidManifest.xml:21:5-23:55
+MERGED from [com.cloudinary:cloudinary-android:1.20.0] /home/advanz101/.android/build-cache/e6849b86bbc3f6854396d531a1c66b6ce9199c7a/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:8:5-10:41
+MERGED from [net.vrallev.android:cat:1.0.5] /home/advanz101/.android/build-cache/5b5c523f599d2f85831bad95e5bec11c8809473e/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/advanz101/.android/build-cache/ea870c5688387c47e4075d18d86e696720e4c01e/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/advanz101/.android/build-cache/7a0b5617ba607b8ad6e821afe1d19089091a4177/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/advanz101/.android/build-cache/c7fc2f9861b7dbccd3119906bee8c44e4aa9254f/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/advanz101/.android/build-cache/0e36a4049024237e081323b06a410aa1b8b0ca21/output/AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:support-v4:25.3.1] /home/advanz101/.android/build-cache/14e32da20f1b668dd8a06eb0dfccdc4759b2b65a/output/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] /home/advanz101/.android/build-cache/a2dc162fa8a59d857b87d491a918db488024941d/output/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] /home/advanz101/.android/build-cache/e46ed5aadaa70ad6a173992cba77701f6fb0eefb/output/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/advanz101/.android/build-cache/cb33d373f6b4d37237a681281a51c69be334fb3d/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] /home/advanz101/.android/build-cache/f08a894a9d053aea82ce651cbd6ef96c0988e3ef/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] /home/advanz101/.android/build-cache/db153c7f01df1e1f42d97c985bb195259732769e/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/advanz101/.android/build-cache/3559fe1aebf4dfae2cfbd5d9bba280a1870a56d1/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-core-utils:25.4.0] /home/advanz101/.android/build-cache/8a39bac2f51775c7fe9fe64ae43221e8dc54ed0c/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.4.0] /home/advanz101/.android/build-cache/630ec570605448236b7ef4f7465835ac12c8ca93/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] /home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
@@ -182,27 +214,107 @@ MERGED from [com.android.support:support-v4:25.3.1] /home/advanz101/.android/bui
 MERGED from [com.android.support:support-fragment:25.3.1] /home/advanz101/.android/build-cache/a2dc162fa8a59d857b87d491a918db488024941d/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] /home/advanz101/.android/build-cache/e46ed5aadaa70ad6a173992cba77701f6fb0eefb/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/advanz101/.android/build-cache/cb33d373f6b4d37237a681281a51c69be334fb3d/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /home/advanz101/.android/build-cache/f08a894a9d053aea82ce651cbd6ef96c0988e3ef/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] /home/advanz101/.android/build-cache/db153c7f01df1e1f42d97c985bb195259732769e/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.4.0] /home/advanz101/.android/build-cache/630ec570605448236b7ef4f7465835ac12c8ca93/output/AndroidManifest.xml:26:9-28:38
 	android:value
 		ADDED from [com.android.support:design:25.3.1] /home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/AndroidManifest.xml:27:9-31
 	android:name
 		ADDED from [com.android.support:design:25.3.1] /home/advanz101/.android/build-cache/c95abaea0e288b12a6ed80e8b573afbf3963c7be/output/AndroidManifest.xml:26:9-47
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:19:5-78
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/advanz101/.android/build-cache/ea870c5688387c47e4075d18d86e696720e4c01e/output/AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:19:22-76
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:21:5-77
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:21:19-51
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/advanz101/.android/build-cache/46036fe541b111bf73b43d149f5ade466b8e6053/output/AndroidManifest.xml:21:52-75
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/AndroidManifest.xml:19:9-172
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:14:22-78
+service#com.evernote.android.job.v21.PlatformJobService
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:17:9-20:72
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/AndroidManifest.xml:19:146-170
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/AndroidManifest.xml:19:86-145
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:19:13-37
+	android:permission
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:20:13-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/advanz101/.android/build-cache/ea3ceda4e409a441c8a79830de301c40b50af213/output/AndroidManifest.xml:19:19-85
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:18:13-75
+service#com.evernote.android.job.v14.PlatformAlarmService
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:21:9-23:40
+	android:exported
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:23:13-37
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:22:13-77
+receiver#com.evernote.android.job.v14.PlatformAlarmReceiver
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:25:9-34:20
+	android:exported
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:26:13-78
+intent-filter#com.evernote.android.job.v14.RUN_JOB+net.vrallev.android.job.v14.RUN_JOB
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:28:13-33:29
+action#com.evernote.android.job.v14.RUN_JOB
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:31:17-79
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:31:25-76
+action#net.vrallev.android.job.v14.RUN_JOB
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:32:17-78
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:32:25-75
+receiver#com.evernote.android.job.JobBootReceiver
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:35:9-44:20
+	android:exported
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:36:13-68
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.MY_PACKAGE_REPLACED+android.intent.action.QUICKBOOT_POWERON+com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:38:13-43:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:39:17-79
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:39:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:40:17-82
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:40:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:41:17-82
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:41:25-79
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:42:17-84
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:42:25-81
+service#com.evernote.android.job.gcm.PlatformGcmService
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:46:9-54:19
+	android:enabled
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:48:13-36
+	android:exported
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:49:13-36
+	android:permission
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:50:13-93
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:47:13-75
+intent-filter#com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:51:13-53:29
+action#com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:52:17-87
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:52:25-84
+service#com.evernote.android.job.JobRescheduleService
+ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:55:9-57:40
+	android:exported
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:57:13-37
+	android:name
+		ADDED from [com.evernote:android-job:1.1.8] /home/advanz101/.android/build-cache/e67fdc6aa7d6db0704a29b237336500a9a7b86dc/output/AndroidManifest.xml:56:13-73
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.4] /home/advanz101/.android/build-cache/ea870c5688387c47e4075d18d86e696720e4c01e/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /home/advanz101/.android/build-cache/ea870c5688387c47e4075d18d86e696720e4c01e/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /home/advanz101/.android/build-cache/ea870c5688387c47e4075d18d86e696720e4c01e/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/advanz101/.android/build-cache/7a0b5617ba607b8ad6e821afe1d19089091a4177/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/advanz101/.android/build-cache/7a0b5617ba607b8ad6e821afe1d19089091a4177/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/advanz101/.android/build-cache/7a0b5617ba607b8ad6e821afe1d19089091a4177/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/advanz101/.android/build-cache/7a0b5617ba607b8ad6e821afe1d19089091a4177/output/AndroidManifest.xml:19:19-85

@@ -240,6 +240,10 @@
         "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
+        "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/activity_maps.xml",
+        "source": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/src/main/res/layout/activity_maps.xml"
+    },
+    {
         "merged": "/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/home/advanz101/.android/build-cache/345d4c7043b7cc65003757aa557883b92d5081fa/output/res/layout/abc_list_menu_item_layout.xml"
     }

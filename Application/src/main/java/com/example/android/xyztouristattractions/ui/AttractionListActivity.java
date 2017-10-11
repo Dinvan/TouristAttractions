@@ -28,9 +28,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.cloudinary.android.MediaManager;
 import com.example.android.xyztouristattractions.R;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.service.UtilityService;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * The main tourist attraction activity screen which contains a list of
@@ -45,7 +49,11 @@ public class AttractionListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Map config = new HashMap();
+        config.put("cloud_name", "dzlvreyid");
+        config.put("api_key","187422297561415");
+        config.put("api_secret","kY0F4bLzdZT1L7QplbpSOafBFs0");
+        MediaManager.init(getApplicationContext(),config);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new AttractionListFragment())
