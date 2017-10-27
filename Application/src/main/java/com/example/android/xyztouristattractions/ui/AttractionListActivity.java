@@ -49,11 +49,7 @@ public class AttractionListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Map config = new HashMap();
-        config.put("cloud_name", "dzlvreyid");
-        config.put("api_key","187422297561415");
-        config.put("api_secret","kY0F4bLzdZT1L7QplbpSOafBFs0");
-        MediaManager.init(getApplicationContext(),config);
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new AttractionListFragment())

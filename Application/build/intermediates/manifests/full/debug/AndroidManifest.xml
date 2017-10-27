@@ -68,35 +68,12 @@
         <receiver android:name="com.example.android.xyztouristattractions.service.UtilityReceiver" />
 
         <service android:name="com.example.android.xyztouristattractions.service.UtilityService" />
-        <service android:name="com.example.android.xyztouristattractions.service.ListenerService" >
-            <intent-filter>
-
-                <!-- listeners receive events that match the action and data filters -->
-                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
-
-                <!-- filters by Constants.CLEAR_NOTIFICATIONS_PATH -->
-                <data
-                    android:host="*"
-                    android:pathPrefix="/clear"
-                    android:scheme="wear" />
-
-                <!--
-                filters by Constants.START_PATH, the prefix for
-                Constants.START_ATTRACTION_PATH ('/start/attraction') and
-                Constants.START_NAVIGATION_PATH ('/start/navigation')
-                -->
-                <data
-                    android:host="*"
-                    android:pathPrefix="/start"
-                    android:scheme="wear" />
-            </intent-filter>
-        </service>
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
-            android:name="com.info.imagepost.config.GlideConfiguration"
+            android:name="com.example.android.xyztouristattractions.config.GlideConfiguration"
             android:value="GlideModule" />
 
         <activity

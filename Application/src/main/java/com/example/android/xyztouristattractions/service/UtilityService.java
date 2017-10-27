@@ -121,7 +121,7 @@ public class UtilityService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         String action = intent != null ? intent.getAction() : null;
         if (ACTION_ADD_GEOFENCES.equals(action)) {
-            addGeofencesInternal();
+//            addGeofencesInternal();
         } else if (ACTION_GEOFENCE_TRIGGERED.equals(action)) {
             geofenceTriggered(intent);
         } else if (ACTION_REQUEST_LOCATION.equals(action)) {

@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/advanz101/.android/build-cache/62f5631a56210528d36dc0d78efd6869768ed239/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c6aa915c08cfd82780c10d4b957018bf819a48e2">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_846bd79baf2f47f6ab99c05001c08e731d0ab3e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/advanz101/.android/build-cache/7a0b5617ba607b8ad6e821afe1d19089091a4177/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -126,6 +135,15 @@
         revision="25.0.3"
         sha1="f6e58c7d603352781e3ab0ed958633718c085f90">
         <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_7054839307b16ff353e229fb328392da8b3ded22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/advanz101/.android/build-cache/7cd8f769d66b0ff998b40ba390df7ffc2a9f498b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_c367da5ea050cc5fff26e4ed3ef5b4c1f075abfe.jar" />
     </item>
     <item
         is-multidex="false"
@@ -180,15 +198,6 @@
         revision="25.0.3"
         sha1="da76ca59f6a57ee3102f8f9bd9cee742973efa8a">
         <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/slf4j-api-1.7.25_bbe8ff2e0a55d129566953d8c4c5549ac4b374c4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/advanz101/.android/build-cache/a27992ab3c9efee58822211d89cd672fc170312c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
-        <dex dex="/home/advanz101/Dinesh_WorkSpace/SampleProjects/TouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_73cbc0ad43653bd0c6544b4479dd1770223ff116.jar" />
     </item>
 
 </items>
