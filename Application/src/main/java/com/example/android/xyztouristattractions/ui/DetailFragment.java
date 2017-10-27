@@ -19,6 +19,7 @@ package com.example.android.xyztouristattractions.ui;
 import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -47,10 +48,13 @@ import com.example.android.xyztouristattractions.common.Constants;
 import com.example.android.xyztouristattractions.common.Utils;
 import com.example.android.xyztouristattractions.provider.TouristAttractions;
 import com.example.android.xyztouristattractions.test.TestModel;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.gson.Gson;
@@ -149,7 +153,7 @@ public class DetailFragment extends Fragment implements OnMapReadyCallback {
         attractionsRecyclerView.setAdapter(cityAttractionAdapter);
         setMap();
 
-        getRoute();
+
         return view;
     }
 
@@ -207,12 +211,19 @@ public class DetailFragment extends Fragment implements OnMapReadyCallback {
 
         DirectionsApiRequest apiRequest = DirectionsApi.newRequest(context);
         apiRequest.origin(new com.google.maps.model.LatLng(Utils.getLocation(getActivity()).latitude, Utils.getLocation(getActivity()).longitude));
-        apiRequest.destination(new com.google.maps.model.LatLng(Utils.getLocation(getActivity()).latitude, Utils.getLocation(getActivity()).longitude));
+        apiRequest.destination(new com.google.maps.model.LatLng(22.7175, 75.8683));
         com.google.maps.model.LatLng[] wayPoints = new com.google.maps.model.LatLng[mAttraction.getToDoAttractionsList().size()];
         for (int i = 0; i < mAttraction.getToDoAttractionsList().size(); i++) {
             wayPoints[i] = new com.google.maps.model.LatLng(mAttraction.getToDoAttractionsList().get(i).getLatitude(), mAttraction.getToDoAttractionsList().get(i).getLongitude());
+
+
+            googleMap.addMarker(new MarkerOptions().position(mAttraction.getToDoAttractionsList().get(i).getLocation())
+                    .title(mAttraction.getToDoAttractionsList().get(i).getAttractionName()));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(mAttraction.getToDoAttractionsList().get(i).getLocation()));
+
         }
         apiRequest.waypoints(wayPoints);
+        apiRequest.optimizeWaypoints(true);
         apiRequest.mode(TravelMode.DRIVING); //set travelling mode
 
         apiRequest.setCallback(new com.google.maps.PendingResult.Callback<DirectionsResult>() {
@@ -222,8 +233,27 @@ public class DetailFragment extends Fragment implements OnMapReadyCallback {
                 Log.e("onresult", routes.length + "");
                 if (googleMap != null) {
                     DirectionsRoute route = routes[0];
-                    List<LatLng> directionPointList = getLatlngList(route.overviewPolyline.decodePath());
-                    googleMap.addPolyline(new PolylineOptions().addAll(directionPointList));
+                    int waypointOrder[] = route.waypointOrder;
+
+                    final List<LatLng> directionPointList = getLatlngList(route.overviewPolyline.decodePath());
+                    Log.e("directionPointList", directionPointList.toString() + "");
+               /*  Polyline p  = googleMap.addPolyline(new PolylineOptions().addAll(directionPointList));
+                    p.setWidth(5f);
+                    p.setColor(Color.parseColor("#000000"));
+*/
+
+                    getActivity().runOnUiThread(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            Polyline line = googleMap.addPolyline(new PolylineOptions()
+                                    .addAll(directionPointList)
+                                    .width(5)
+                                    .color(Color.RED));
+                            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(directionPointList.get(0), 12.0f));
+
+                        }
+                    });
 
                 }
             }
@@ -257,5 +287,6 @@ public class DetailFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
+        getRoute();
     }
 }

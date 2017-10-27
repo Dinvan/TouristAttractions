@@ -32,25 +32,25 @@
             android:layout_below="@+id/descriptionTextView"
             android:text="@string/attractions"
             android:textStyle="bold" />
+        <fragment
+            android:layout_below="@+id/list_title"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:context="fragment.WalkingRootFragment"></fragment>
 
         <com.example.android.xyztouristattractions.ui.AttractionsRecyclerView
             android:id="@+id/list"
             android:layout_margin="@dimen/small_margin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/list_title"
+            android:layout_below="@+id/map"
             android:scrollbars="vertical"
             app:layoutManager="GridLayoutManager"
             app:spanCount="@integer/list_columns" />
 
-        <fragment
-            android:id="@+id/map"
-            android:layout_below="@+id/list"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context="fragment.WalkingRootFragment"></fragment>
-    </RelativeLayout>
+         </RelativeLayout>
 
 
 </RelativeLayout>
